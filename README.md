@@ -45,27 +45,6 @@ The recommendation pipeline includes:
 
 ---
 
-## Project Structure
-
-```
-ML2-Movie-Recommendation/
-│
-├── data/
-├── src/
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   ├── item_based_cf.py
-│   ├── evaluation.py
-│   └── recommend.py
-│
-├── notebooks/
-├── report/
-├── README.md
-└── requirements.txt
-```
-
----
-
 ## Installation
 
 ### 1. Create virtual environment (Python 3.10 recommended)
