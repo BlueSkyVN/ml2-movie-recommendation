@@ -37,8 +37,12 @@ def main():
     print(evaluate_model(test_df, model.predict_rating))
 
     # 8. RECOMMENDATION DEMO
-    print("\nTop 5 recommendations for user 1:")
-    print(recommend_movies(1, model, train_df, movies))
+    try:
+        user_id = int(input("\nType user ID to see movies recommendation: "))
+        print(f"\nTop 5 recommendations for user {user_id}:")
+        print(recommend_movies(user_id, model, train_df, movies))
+    except ValueError:
+        print("Please enter a valid user ID.")
 
 
 if __name__ == "__main__":
